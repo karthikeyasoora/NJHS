@@ -15,18 +15,34 @@ body {
 header {
     background-color: navy;
     color: white;
-    text-align: center;
-    padding: 30px;
+    padding: 25px;
     border-bottom: 6px solid orange;
 }
 
-header h1 {
-    margin: 0;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 
-header h2 {
-    margin-top: 10px;
-    color: #ffcc99;
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+.title-text {
+    text-align: left;
+}
+
+.title-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.title-text h2 {
+    margin-top: 5px;
+    color: #ffd699;
 }
 
 .container {
@@ -41,6 +57,10 @@ header h2 {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 25px;
+}
+
+.section-title {
+    color: navy;
 }
 
 details {
@@ -66,6 +86,11 @@ li {
     margin: 8px 0;
 }
 
+.edit-note {
+    color: gray;
+    font-size: 14px;
+}
+
 footer {
     background-color: navy;
     color: white;
@@ -73,23 +98,22 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
-
-.section-title {
-    color: navy;
-}
-
-.edit-note {
-    color: gray;
-    font-size: 14px;
-}
 </style>
 
 </head>
 <body>
 
 <header>
-    <h1>Bailey Middle School</h1>
-    <h2>National Junior Honor Society</h2>
+    <div class="header-content">
+
+        <img src="bronco.png" alt="Bailey Bronco Logo" class="logo">
+
+        <div class="title-text">
+            <h1>Bailey Middle School</h1>
+            <h2>National Junior Honor Society</h2>
+        </div>
+
+    </div>
 </header>
 
 <div class="container">
@@ -98,7 +122,8 @@ footer {
         <h2 class="section-title">Welcome</h2>
         <p>
             Welcome to the Bailey Middle School National Junior Honor Society website.
-            Here you can view club members, upcoming events, and leadership information.
+            Here you can find club information, member listings, leadership positions,
+            and upcoming events.
         </p>
     </div>
 
@@ -106,7 +131,7 @@ footer {
         <summary>Members</summary>
 
         <p class="edit-note">
-            Edit the names below whenever new members join.
+            Edit the names below when members join or leave the club.
         </p>
 
         <ul>
@@ -123,7 +148,7 @@ footer {
         <summary>Calendar</summary>
 
         <p class="edit-note">
-            Update these events throughout the school year.
+            Update events throughout the school year.
         </p>
 
         <ul>
@@ -139,7 +164,7 @@ footer {
         <summary>Leaders</summary>
 
         <p class="edit-note">
-            Update officer positions as needed.
+            Update leadership positions as needed.
         </p>
 
         <ul>
